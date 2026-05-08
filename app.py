@@ -6,6 +6,7 @@ app = Flask(__name__)
 tasks = []
 task_id_control = 1
 
+# Registar tarefa
 @app.route("/tasks", methods=["POST"])
 def create_task():
     global task_id_control
@@ -14,7 +15,7 @@ def create_task():
     task_id_control += 1
     tasks.append(new_task)
     print(tasks)
-    return jsonify({"message": "Nova tarefa criada com sucesso."})
+    return jsonify({"message": "Nova tarefa criada com sucesso.", "id": new_task.id})
 
 # Resgatar todas a tarefas
 @app.route("/tasks", methods=['GET'])
@@ -23,7 +24,7 @@ def get_tasks():
 
     output = {
         'tasks': task_list,
-        "total tasks": len(task_list)
+        "total_tasks": len(task_list)
     }
     return jsonify(output)
 
