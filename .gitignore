@@ -1,3 +1,7 @@
+# Byte-compiled / optimized / DDL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 swagger.x-yaml
 .venv
-models/__pycache__
