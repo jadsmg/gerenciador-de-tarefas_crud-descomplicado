@@ -16,8 +16,8 @@ A aplicação permite criar, listar, atualizar e remover tarefas por meio de end
 
 ### Instalação
 ```bash
-git clone https://github.com/xandsmg/gerenciador-de-tarefas---crud-descomplicado
-cd gerenciador-de-tarefas---crud-descomplicado
+git clone https://github.com/xandsmg/gerenciador-de-tarefas_crud-descomplicado
+cd gerenciador-de-tarefas_crud-descomplicado
 pip install -r requirements.txt
 ```
 ### Executando o projeto
