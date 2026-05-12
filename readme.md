@@ -28,3 +28,4 @@ python3 app.py
 ```bash
 pytest tests.py -v
 ```
+# test with git pull 
